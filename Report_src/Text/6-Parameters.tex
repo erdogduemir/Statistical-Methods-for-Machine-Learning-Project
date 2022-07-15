@@ -1,0 +1,14 @@
+\section{Parameters}
+In the study, different parameters are used in each machine learning network. These are in order:
+\subsection{Batch Size}
+The batch size is a hyperparameter that defines the number of samples to work through before updating the internal model parameters.\par
+
+Think of a batch as a for-loop iterating over one or more samples and making predictions. At the end of the batch, the predictions are compared to the expected output variables and an error is calculated. From this error, the update algorithm is used to improve the model, e.g. move down along the error gradient.\par
+\subsection{SGD}
+Stochastic Gradient Descent, or SGD for short, is an optimization algorithm used to train machine learning algorithms, most notably artificial neural networks used in deep learning. \par
+The job of the algorithm is to find a set of internal model parameters that perform well against some performance measure such as logarithmic loss or mean squared error. \par
+Optimization is a type of searching process and you can think of this search as learning. The optimization algorithm is called “gradient descent“, where “gradient” refers to the calculation of an error gradient or slope of error and “descent” refers to the moving down along that slope towards some minimum level of error. \par
+\subsection{Epoch}
+The number of epochs is a hyperparameter that defines the number times that the learning algorithm will work through the entire training dataset. \par
+
+One epoch means that each sample in the training dataset has had an opportunity to update the internal model parameters. An epoch is comprised of one or more batches. For example, as above, an epoch that has one batch is called the batch gradient descent learning algorithm.\par
